@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Resources>
+    <Resource id="myJmsConnectionFactory" type="javax.jms.ConnectionFactory">
+        connectionMaxIdleTime = 15 Minutes
+        connectionMaxWaitTime = 5 seconds
+        poolMaxSize = 10
+        poolMinSize = 0
+        resourceAdapter = Default JMS Resource Adapter
+        transactionSupport = xa
+    </Resource>
+
+    <Resource id="myDataSource" type="DataSource">
+        jdbcUrl = jdbc:hsqldb:mem:site
+        userName = sa
+    </Resource>
+
+<!--    <Resource id="myQueue" type="javax.jms.Queue">-->
+<!--        physicalName = MySimpleQueue-->
+<!--    </Resource>-->
+
+<!--    <Resource id="myTopic" type="javax.jms.Topic">-->
+<!--        physicalName = MySimpleTopic-->
+<!--    </Resource>-->
+
+</Resources>
+
